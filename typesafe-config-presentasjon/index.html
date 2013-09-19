@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Config</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/github.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Agenda</h1>
+                    <ul>
+                        <li>Runde rundt bordet</li>
+                        <li>Planlegge møter</li>
+                        <li>Kurs på NTNU?</li>
+                        <li>Hands on</li>
+                        <li>Eksempel på FP</li>
+                        <li>Sosialt :-)</li>
+                    </ul>
+				</section>
+
+                <section>
+                    <h2>Temaer</h2>
+                    <code class="java" data-trim contenteditable>
+* åkomigjena
+					</code>
+                </section>
+
+                <section>
+                    <h2>Kurs på NTNU</h2>
+                    <p>Kursserien om Scala i tre deler, og datoene er allerede satt:<p>
+                    <p>9. oktober</p>
+                    <p>30. oktober</p>
+                    <p>11. november</p>
+                    <p>Play eller AKKA?</p>
+                </section>
+
+                <section>
+					<h1>Config</h1>
+					<h3>Configuration library for JVM languages</h3>
+					<p>
+						<small>Faggruppemøte 17.9.13 <a href="http://twitter.com/froden">@froden</a></small>
+					</p>
+				</section>
+
+                <section>
+                    <h2>Config</h2>
+                    <ul>
+                        <li>Laget av Typesafe</li>
+                        <li>Skrevet i plain Java 1.6</li>
+                        <li>Brukes i en rekke store scalaprosjekter</li>
+                        <li>Gjennomtestet</li>
+                        <li>Støtter Java properties, JSON og et lettlest JSON superset</li>
+                        <li>Smart håndtering av typer og størrelser</li>
+                        <ul>
+                            <li>512k == 512000 (long)</li>
+                            <li>1 minute == 60000 (long)</li>
+                            <li>"yes" som boolean == true</li>
+                            <li>10 som float == 10.0</li>
+                        </ul>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Immutable config-objekter</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>API</h2>
+                    <pre><code class="java" data-trim contenteditable>
+Config conf = ConfigFactory.load();
+
+String name1 = conf.getString("app.name");
+boolean debug = conf.getBoolean("app.debug");
+int timeout = conf.getInt("app.timeout")
+
+Config app = conf.getConfig("app");
+String name2 = app.getString("name");
+					</code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>2 klasser: Config og ConfigFactory</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Format</h2>
+                    <pre><code data-trim contenteditable>
+app {
+    name = "my-app"
+    debug = true
+    timeout = 10 seconds
+}
+					</code></pre>
+                    <pre><code data-trim contenteditable>
+app.debug = false
+app.timeout = 10000
+					</code></pre>
+                </section>
+
+                <section>
+                    <h2>Avansert</h2>
+                    <pre><code data-trim contenteditable>
+standard-timeout = 10ms
+app1.timeout = ${standard-timeout}
+app2.timeout = ${standard-timeout}
+					</code></pre>
+                    <pre><code data-trim contenteditable>
+basedir = "/whatever/whatever"
+basedir = ${?FORCED_BASEDIR}
+					</code></pre>
+                    <pre><code data-trim contenteditable>
+basedir = ${HOME}"/whatever/whatever"
+					</code></pre>
+                    <pre><code data-trim contenteditable>
+path : [ "/bin" ]
+path : ${path} [ "/usr/bin" ]
+					</code></pre>
+                </section>
+
+                <section>
+                    <h2>Merge config trees</h2>
+                    <pre><code data-trim contenteditable>
+foo=42
+bar=true
+dev.foo=57
+prod.foo=10
+					</code></pre>
+                    <pre><code data-trim contenteditable>
+Config devConfig = originalConfig.getConfig("dev")
+                                 .withFallback(originalConfig)
+int foo = devConfig.getString("foo"); //57
+boolean bar = devConfig.getBoolean("bar"); //true
+					</code></pre>
+                </section>
+
+                <section>
+                    <h2>Maven</h2>
+                    <pre><code data-trim contenteditable>
+<dependency>
+    <groupId>com.typesafe</groupId>
+    <artifactId>config</artifactId>
+    <version>1.0.2</version>
+</dependency>
+					</code></pre>
+                    <h2>Sbt</h2>
+                    <pre><code data-trim contenteditable>
+libraryDependencies += "com.typesafe" % "config" % "1.0.2"
+					</code></pre>
+
+
+				</section>
+
+                <section>
+                    <h3>Oppgaver</h3>
+                    <h4><a href="https://github.com/froden/typesafe-config-workshop">https://github.com/froden/typesafe-config-workshop</a></h4>
+                    <h3>Dokumentasjon og kildekode</h3>
+                    <h4><a href="https://github.com/typesafehub/config">https://github.com/typesafehub/config</a></h4>
+				</section>
+
+                <section>
+                    <h2>Eksempel på FP</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+class Cafe {
+  def buyCoffee(cc: CreditCard): Coffee = {
+    val cup = new Coffee()
+    cc.charge(cup.price)
+    cup
+  }
+}
+					</code></pre>
+                </section>
+
+                <section>
+                    <h2>Testbar utgave</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+class Cafe {
+  def buyCoffee(cc: CreditCard, p: Payments): Coffee = {
+    val cup = new Coffee()
+    p.charge(cc, cup.price)
+    cup
+  }
+}
+					</code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>Bedre, men vi må fortsatt mocke p</li>
+                            <li>Payments må være et interface selv om vi ikke trenger det</li>
+                            <li>Vanskelig å gjenbruke</li>
+                            <li>Tenk at vi skal kjøpe mange kaffe og samle opp betalingen</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Funksjonell utgave</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+class Cafe {
+  def buyCoffee(cc: CreditCard): (Coffee, Charge) = {
+    val cup = new Coffee()
+    (cup, Charge(cc, cup.price))
+  }
+}
+					</code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>Separert funksjonell kode fra kode med side-effects</li>
+                            <li>Sende betaling til cc-selskap er et annet ansvar</li>
+                            <li>Enklere å gjenbruke</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Kombinere betalinger</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+case class Charge(cc: CreditCard, amount: Double) {
+  def combine(other: Charge): Charge =
+    if (cc == other.cc)
+      Charge(cc, amount + other.amount)
+    else
+      throw new Exception("Can't combine charges for multiple cards")
+}
+					</code></pre>
+                </section>
+
+                <section>
+                    <h2>Kjøpe flere kaffe</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+class Cafe {
+  def buyCoffee(cc: CreditCard): (Coffee, Charge) = ...
+  def buyCoffees(cc: CreditCard, n: Int): (List[Coffee], Charge) =
+    val purchases: List[(Coffee, Charge)] = List.fill(n)(buyCoffee(cc))
+    val (coffees, charges) = purchases.unzip
+    (coffees, charges.reduce((c1,c2) => c1.combine(c2)))
+}
+					</code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>Kjøpe flere kaffe kan nå lages utelukkende ved å kombinere eksisterende funksjoner</li>
+                        </ul>
+                    </aside>
+                </section>
+
+
+            </div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: "serif", // available themes are in /css/theme
+				transition: "linear", // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
