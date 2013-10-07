@@ -7,7 +7,7 @@
     <ignored path="slides.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381124585110" ignored="false" />
-    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381124622847" ignored="false" />
+    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381125817399" ignored="false" />
     <file path="/notater" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380616525785" ignored="false" />
     <file path="$USER_HOME$/Dropbox/jobb/scala og jvm/scala-foredrag chalmers/reveal.js/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380113145640" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/pom.xml" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380183318777" ignored="false" />
@@ -288,7 +288,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="28" selection-start="9690" selection-end="9690" vertical-scroll-proportion="0.5530393">
+            <state line="625" column="3" selection-start="24591" selection-end="24591" vertical-scroll-proportion="0.624553">
               <folding>
                 <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -897,7 +897,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="28" selection-start="9690" selection-end="9690" vertical-scroll-proportion="0.5530393">
+        <state line="625" column="3" selection-start="24591" selection-end="24591" vertical-scroll-proportion="0.624553">
           <folding>
             <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
