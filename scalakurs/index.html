@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Scalakurs</title>
+
+		<meta name="description" content="Introduksjonskurs til Scala">
+		<meta name="author" content="Bekk">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/github.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+                <section>
+                    <h1>SCALA</h1>
+                    <h3>Introduksjonskurs</h3>
+                    <p>
+                        <small>Faggruppe for Scala & JVM</small>
+                    </p>
+                    <a class="image" href="http://bekk.no" target="_blank">
+                        <img src="images/bekk-logo-small.png" alt="Bekk">
+                    </a>
+                    <aside class="notes">
+                        <ul>
+                            <li>Velkommen til Scalakurs</li>
+                            <li>Presentere folk</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h3><strong>9. okt: Grunnleggende Scala</strong></h3>
+                    <h3>30. okt: Funksjonell programmering</h3>
+                    <h3>11. nov: Webapp med Scala</h3>
+                    <aside class="notes">
+                        <ul>
+                            <li>I dag skal vi lære litt grunnleggende om Scala</li>
+                            <li>Mer avanserte emner og mer fokus på funksjonell prog</li>
+                            <li>Lage en webapp med Scala REST-api som backend</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>SCALA</h2>
+                    <p><em>Et moderne, statisk typet, objekt-funksjonelt programmeringsspråk på JVM-en</em></p>
+                    <img src="images/scala_button.jpg" alt="Scala">
+                    <aside class="notes">
+                        <ul>
+                            <li>Mer moderne språk enn Java</li>
+                            <li>Hybrid objektorientert og funksjonelt språk og påstår å forene det beste fra to verdener</li>
+                            <li>Kompilerer til samme JVM bytekode som Java</li>
+                            <li>Fungerer sømløst med alt av eksisterende javabiblioteker</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Martin Odersky</h2>
+                    <img src="images/martind-odersky.jpg" height="450" alt="Martin Odersky"><br>
+                    <aside class="notes">
+                        <ul>
+                            <li>Scala ble oppfunnet i 2001 av Martin Odersky sammen med teamet hans på EPFL-universitet i Lausanne i Sveits</li>
+                            <li>Martin Odersky er Professor i programmeringsspråk og er mannen bak Java-kompilatoren og Java generics</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Hvorfor Scala?</h2>
+                    <ul>
+                        <li>Elegant, konsis syntaks</li>
+                        <li>Funksjonelt og objektorientert</li>
+                        <li>Avansert typesystem</li>
+                        <li>Høy ytelse</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Syntaxen i Scala gir samme uttrykkskraft som man ofte forbinder med dynamiske språk som Ruby</li>
+                            <li>Kjører på JVM</li>
+                            <li>For en Java virtual machine så er Scala-programmer bare vanlig bytekode</li>
+                            <li>Mye raskere enn de dynamiske JVM-språkene jruby, groovy, clojure, jython</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Community</h2>
+                    <a class="image" href="http://scaladays.org" target="_blank">
+                        <img height="100" src="images/scaladays.png" alt="scaladays.org">
+                    </a>
+                    <a class="image" href="http://twitter.com" target="_blank">
+                        <img height="100" src="images/twitter.jpg" alt="twitter.com">
+                    </a>
+                    <a class="image" href="http://akka.io" target="_blank">
+                        <img height="100" src="images/akka.png" alt="akka.io">
+                    </a>
+                    <a class="image" href="http://github.com" target="_blank">
+                        <img height="100" src="images/github.png" alt="github.com">
+                    </a>
+                    <a class="image" href="http://playframework.com" target="_blank">
+                        <img height="100" src="images/play.png" alt="playframework.com">
+                    </a>
+                    <a class="image" href="http://typesafe.com" target="_blank">
+                        <img height="100" src="images/typesafe.png" alt="typesafe.com">
+                    </a>
+                    <a class="image" href="http://scala-lang.org" target="_blank">
+                        <img height="100" src="images/scala.png" alt="scala-lang.org">
+                    </a>
+                    <a class="image" href="http://liftweb.net/" target="_blank">
+                        <img height="100" src="images/lift.png" alt="liftweb.net">
+                    </a>
+                    <a class="image" href="http://2013.flatmap.no/" target="_blank">
+                        <img height="100" src="images/flatmap.png" alt="2013.flatmap.no">
+                    </a>
+                    <a class="image" href="http://stackoverflow.com/" target="_blank">
+                        <img height="100" src="images/stackoverflow.png" alt="stackoverflow.com">
+                    </a>
+                    <a class="image" href="http://www.meetup.com/scalabin/" target="_blank">
+                        <img height="100" src="images/meetup.jpg" alt="meetup.com/scalabin">
+                    </a>
+                    <aside class="notes">
+                        <ul>
+                            <li>Scala har et stort community med mange engasjerte og meget dyktige folk</li>
+                            <li>Det finnes mange bra rammeverk skrevet i og for Scala. Det blir stadig flere.</li>
+                            <li>AKKA - actor framwork for concurrent systemer</li>
+                            <li>Play2 - Scalas svar på Rails</li>
+                            <li>Lift - Et view first basert web-rammeverk</li>
+                            <li>Etter hvert meget god IDE-støtte både for IntelliJ og Eclipse</li>
+                            <li>Man finner som regel svar på det man lurer på ved å google</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Hvem bruker Scala?</h2>
+                    <img src="images/bekk-logo-small.png" alt="Bekk"><br>
+                    <img style="padding: 10px; background: white;" src="images/clients-big.png" alt="Bruker scala">
+                    <aside class="notes">
+                        <ul>
+                            <li>Men er det noen som bruker Scala i produksjon?</li>
+                            <li>Bekk har for tiden ett rent Scala-prosjekt</li>
+                            <li>Flere som bruker det til mindre ting</li>
+                            <li>Flere vurderer å ta det i bruk</li>
+                            <li>Linkedin</li>
+                            <li>Twitter</li>
+                            <li>Foursquare</li>
+                            <li>The Guardian</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <p style="font-size: 1.5em;"><q cite="http://twitter.com/al3x"><strong>Basically</strong>, it's the future</q></p>
+                    <p><a href="http://twitter.com/al3x">@al3x</a></p>
+                    <aside class="notes">
+                        <ul>
+                            <li>Basically its the future</li>
+                            <li>Alex fra twitter er enig med meg at Scala er verdt å satse på</li>
+                            <li>Jeg mener Scala er et meget attraktivt alternativ til Java</li>
+                            <li>Og det er modent nok til å ta det i bruk på prosjekter i dag!</li>
+                        </ul>
+                    </aside>
+                </section>
+
+
+
+
+
+                <section>
+                    <h2>Oppgaver</h2>
+                    <img height="100" src="images/puzzle.jpg" alt="oppgaver"><br>
+                    Oppgaver: <a href="http://git.io/0aMB8Q">http://git.io/0aMB8Q</a>
+                    Slides: 
+                </section>
+
+                <section>
+                    <h2>Klasser, objekter, traits</h2>
+                    <p>
+                        Objektorientert programmering
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Klasser</h2>
+                    <!--<h4 style="text-align: left">Enkel klasse</h4>-->
+                    <pre><code class="scala" data-trim contenteditable>
+class Person
+
+val p = new Person
+					</code></pre>
+
+                    <div class="fragment">
+                        <h4>Medlemsvariabler og getters/setters</h4>
+                        <pre><code class="scala" data-trim contenteditable>
+class Person(val name: String, var age: Int)
+
+val p = new Person("Bob", 25)
+p.name // Bob
+p.age = 26
+					    </code></pre>
+                    </div>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>klasser deklareres med class</li>
+                            <li>instansieres med new</li>
+                            <li>paranteser er valgfritt hvis det ikke er constructor-parametre</li>
+
+                            <li>public er default</li>
+                            <li>val betyr medlemsvariabel/instansvariabel med getter, men ingen setter fordi den ikke kan reassignes (final i java)</li>
+                            <li>var betyr det samme, men med setter også</li>
+                            <li>accessors har samme syntaks som felter (ikke get/setxxx)</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Constructors</h2>
+                    <h4>Primary constructor</h4>
+                    <pre><code class="scala" data-trim contenteditable>
+class Person(age: Int) {
+  val category = if (age < 35) "young" else "old"
+
+  def sayHi = "Hi, I'm " + category
+}
+
+new Person(30).sayHi //Hi, I'm young
+					</code></pre>
+
+                    <div class="fragment">
+                        <h4>Auxillery constructors</h4>
+                        <pre><code class="scala" data-trim contenteditable>
+class Date(val time: Long) {
+
+  def this(date: Date) = this(date.time)
+}
+					    </code></pre>
+                    </div>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>age: Int er default constructor</li>
+                            <li>body til constructor er hele klasse-bodyen</li>
+                            <li>category er en medlemsvariabel med public getter</li>
+                            <li>age er ikke en medlemsvariabel siden den ikke har val/var og ikke brukes annet enn i constructor</li>
+
+                            <li>ekstra constructors med def this()</li>
+                            <li>ekstra constructorer kan man ha så mange man vil, men må kalle en annen eller default constructor</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Objekter</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+object Logger {
+  def log(msg: String) = println(msg)
+}
+
+Logger.log("It's all good!")
+					</code></pre>
+
+                    <div class="fragment">
+                        <h4>Companion-objekter</h4>
+                        <pre><code class="scala" data-trim contenteditable>
+class Person(val name: String, val age: Int)
+
+//I samme fil
+object Person {
+  def apply(name: String, age: Int) = new Person(name, age)
+}
+
+val p = Person("Frode", 33)
+					    </code></pre>
+                    </div>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>objekter - singleton objekter - en klasse med bare 1 instans</li>
+                            <li>kan sammenlignes med static i Java, men er ikke helt det</li>
+                            <li>Kalles med klassenavnet</li>
+
+                            <li>Companion objekter er et objekt med samme navn som en klasse i samme fil</li>
+                            <li>Her legger man alt som tilhører klassen og ikke instansen (igjen veldig likt static i java)</li>
+                            <li>Vanlig å legge factory-metoder sånn som her</li>
+                            <li>apply metoden har spesiell betydning i Scala og bli kalt hvis vi kaller på navnet på objektet</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Traits</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+trait Animal {
+  def greet = "I'm an animal"
+}
+
+class Dog extends Animal
+class Fox extends Animal
+					</code></pre>
+                    <ul>
+                        <li>Abstrakte metoder <strong>og</strong> felter</li>
+                        <li>Konkrete metoder og felter</li>
+                        <li>Mixin composition</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Traits er som interface - kan ha abstrakte metoder</li>
+                            <li>Kan ha konkret oppførsel</li>
+                            <li>Definerer en type</li>
+                            <li>Brukes til å modularisere kode</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Traits</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+trait Animal {
+  def say: String
+
+  def greet = "I'm an animal that says " + say
+}
+
+class Dog extends Animal {
+  def say = "woof"
+}
+
+class Fox extends Animal {
+  def say = ???
+}
+					</code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>Eksempel på Trait som ligner på en abstrakt klasse</li>
+                            <li>siden den har både abstrakte og konkrete metoder</li>
+                            <li>Man kan dog arve fra så mange slike man vil</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Traits</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+trait Animal {
+  def say: String
+}
+trait Fourlegged
+trait Furry
+
+class Dog extends Animal with Fourlegged with Furry {
+  def say = "woof"
+}
+					</code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>Eksemepel på mixin av flere traits</li>
+                            <li>Kan anta at Fourlegged og Furry også inneholder oppførsel som beriker Dog-klassen</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                <h2>List</h2>
+                <h4 style="text-transform: none">scala.immutable</h4>
+                <ul>
+                    <li class="fragment">Implementerer isEmpty, head og tail.</li>
+                    <li class="fragment">O(n) på de fleste operasjoner</li>
+                    <li class="fragment">O(1) på prepend og head/tail-akess</li>
+                    <li class="fragment">Egnet for rekursive løsninger basert på head:tail-akess</li>
+                    <li class="fragment">Eksempler:
+                        <pre><code>scala> 4 :: List(1, 2, 3) // Prepend, O(1)
+res0: List[Int] = List(4, 1, 2, 3)</code></pre>
+                        <pre><code>scala> List(1, 2, 3) ::: List(4) // Append, O(n), foretrekk prepend
+res1: List[Int] = List(1, 2, 3, 4)</code></pre>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2>map()</h2>
+                <ul>
+                    <li>map() tar inn en funksjon og utfører den på alle elementer</li>
+                    <li>map() transformerer listen ihht til funksjonen gitt inn</li>
+
+                </ul>
+
+    <pre><code>scala> val numbers = List(1,2,3)
+numbers: List[Int] = List(1, 2, 3)
+
+scala> numbers.map((x: Int) => x + 1)
+res0: List[Int] = List(2, 3, 4)</code></pre>
+            </section>
+
+            <section>
+                <h2>filter()</h2>
+                <ul>
+                    <li>filter() tar inn en funksjon (predikat)</li>
+                    <li>filter() returnerer et subsett av listen hvor predikatet er sant</li>
+                </ul>
+
+    <pre><code>scala> val myList = List(1,2,3,4,5,6)
+myList: List[Int] = List(1, 2, 3, 4, 5, 6)
+
+scala> myList.filter((x: Int) => x > 3)
+res0: List[Int] = List(4, 5, 6)</code></pre>
+            </section>
+
+
+            <section>
+                <h2>List API eksempler</h2>
+    <pre><code>//Adder et element til begynnelsen av listen
+def ::(x: A): List[A]
+
+//Adder en liste til begynnelsen av listen
+def :::(prefix: List[A]): List[A]
+
+//Velger det første elementet i listen
+def head: A
+
+//Velger de resterende (foruten første) elementene i listen
+def tail: A
+
+//Velger de første n elementene i en liste
+def take(n: Int): List[A]
+
+//Velger alle elementer bortsett fra de første n elementene i en liste
+def drop(n: Int): List[A]
+</code></pre>
+            </section>
+
+            <section>
+                <h2>List API eksempler 2</h2>
+    <pre><code>//Adder et element til begynnelsen av listen
+//Velger de siste n elementene i en liste
+def takeRight(n: Int): List[A]
+
+//Lager en liste av liste ut fra to lister
+def zip[B](that: GenIterable[B]): List[(A, B)]
+</code></pre>
+    </section>
+
+    <section>
+        <h2>Pattern Matching</h2>
+        <p>
+            En avansert versjon av <code>switch</code> i Java
+        </p>
+        <aside class="notes">
+            <ul>
+                <li></li>
+            </ul>
+        </aside>
+    </section>
+
+    </section>
+
+                <section>
+                    <h2>Java-liknende eksempel</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+def toYesOrNo(choice: Int): String = choice match {
+  case 1 => "yes"
+  case 0 => "no"
+  case _ => "error"
+}
+                        </code></pre>
+                    </code></pre>
+                    <pre><code class="scala" data-trim contenteditable>
+scala> toYesOrNo(1)
+res0: String = yes
+
+scala> toYesOrNo(10)
+res1: String = error
+                        </code></pre>
+                    </code></pre>
+                    <aside class="notes">
+                        <ul>
+                            Kan brukes som switch i Java, men har mer avansert funksjonalitet
+                        </ul>
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Typesjekking</h2>
+                    <pre><code class="scala" data-trim contenteditable>
+def f(x: Any): String = x match {
+  case i:Int => "integer: " + i
+  case _:Double => "a double"
+  case s:String => "I want to say " + s
+}
+                    </code></pre>
+                    </code></pre>
+                    <pre><code class="scala" data-trim contenteditable>
+scala> f(2.0)
+res0: String = a double
+                    </code></pre>
+                    </code></pre>
+                    <aside class="notes">
+                        <ul>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Verktøy for funksjonell programmering</h2>
+                    Med pattern matching:
+                    <pre><code class="scala" data-trim contenteditable>
+def fact(n: Int): Int = n match {
+  case 0 => 1
+  case n => n * fact(n - 1)
+}
+                    </code></pre>
+                    Uten pattern matching:
+                    </code></pre>
+                    <pre><code class="scala" data-trim contenteditable>
+def fact(n: Int): Int =
+  if (n == 0) 1
+  else n * fact(n - 1)
+                    </code></pre>
+                    </code></pre>
+                    <aside class="notes">
+                        <ul>
+                        </ul>
+                    </aside>
+                </section>
+
+
+    <section>
+        <h2>Case Classes</h2>
+        <p>
+            (Nesten) Klasser med god støtte for pattern matching
+        </p>
+        <aside class="notes">
+            <ul>
+                <li></li>
+            </ul>
+        </aside>
+    </section>
+
+
+    <section>
+        <h2>Eksporterer konstruktørparametere</h2>
+        <pre><code class="scala" data-trim contenteditable>
+case class Person(firstName: String, lastName: String)
+        </code></pre>
+        <pre><code class="scala" data-trim contenteditable>
+scala> val person = Person("Ola", "Nordmann")
+person: Person = Person(Ola,Nordmann)
+
+scala> person.firstName + " " + person.lastName
+res0: String = Ola Nordmann
+        </code></pre>
+        <ul>
+            <li>
+                Konstruktørparametere automatisk tilgjengelig etter instansiering
+            </li>
+            <li>
+                Reduserer boilerpalate kode
+            </li>
+        </ul>
+        <aside class="notes">
+            <ul>
+            </ul>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Pattern matching direkte på Person</h2>
+        <pre><code class="scala" data-trim contenteditable>
+def printPerson(person: Any) {
+  person match {
+    case Person(first, last) => println(first + " " + last)
+    case _ => println("Not a person!")
+  }
+}
+        </code></pre>
+        <pre><code class="scala" data-trim contenteditable>
+scala> printPerson("Ola Nordmann")
+Not a person!
+
+scala> printPerson(Person("Ola", "Nardmann"))
+Ola Nardmann
+        </code></pre>
+        Scoper konstruktørparameterene i pattern match blokken
+    </section>
+
+
+    <section>
+        <h2>Pattern matching på lister</h2>
+        <pre><code class="scala" data-trim contenteditable>
+def checkIfFirstPersonIsOla(persons: List[Person]): Boolean = {
+  persons match {
+    case List(Person("Ola", _), _*) => true
+    case _ => false
+  }
+}
+        </code></pre>
+        <pre><code class="scala" data-trim contenteditable>
+scala> val persons = List(Person("Ola", "test"),
+    | Person("test", "test"))
+persons: List[Person] = List(Person(Ola,test), Person(test,test))
+
+scala> checkIfFirstPersonIsOla(persons)
+res0: Boolean = true
+        </code></pre>
+        <code>_*</code> betyr villlkårlig mange følgende elementer
+    </section>
+
+                <!--
+                <section>
+					<h1>Reveal.js</h1>
+					<h3>HTML Presentations Made Easy</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Heads Up</h2>
+					<p>
+						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
+						support for CSS 3D transforms to see it in its full glory.
+					</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>
+							Slides can be nested inside of other slides,
+							try pressing <a href="#" class="navigate-down">down</a>.
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Press down or up to navigate.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>Cornify</p>
+						<a class="test" href="http://cornify.com">
+							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 3</h2>
+						<p>That's it, time to go back up.</p>
+						<a href="#/2" class="image">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+					</p>
+				</section>
+
+				<section>
+					<h2>Works in Mobile Safari</h2>
+					<p>
+						Try it out! You can swipe through the slides and pinch your way to the overview.
+					</p>
+				</section>
+
+				<section>
+					<h2>Marvelous Unordered List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  For those of you who like that sort of thing.
+						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=cube#/transitions">Cube</a> -
+						<a href="?transition=page#/transitions">Page</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a> -
+						<a href="?transition=linear#/transitions">Linear</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?#/transitions">Default</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						Reveal.js comes with a few themes built in: <br>
+						<a href="?#/themes">Default</a> -
+						<a href="?theme=sky#/themes">Sky</a> -
+						<a href="?theme=beige#/themes">Beige</a> -
+						<a href="?theme=simple#/themes">Simple</a> -
+						<a href="?theme=serif#/themes">Serif</a> -
+						<a href="?theme=night#/themes">Night</a> <br>
+						<a href="?theme=moon.css#/themes">Moon</a> -
+						<a href="?theme=simple.css#/themes">Simple</a> -
+						<a href="?theme=solarized.css#/themes">Solarized</a>
+					</p>
+					<p>
+						<small>
+							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>Custom Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<section data-background="#007777">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Repeated Image Backgrounds</h2>
+						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>Background Transitions</h2>
+					<p>
+						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
+					</p>
+				</section>
+
+				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+					<h2>Background Transition Override</h2>
+					<p>
+						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Fragmented Views</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<ol>
+							<li class="fragment"><code>any type</code></li>
+							<li class="fragment"><em>of view</em></li>
+							<li class="fragment"><strong>fragments</strong></li>
+						</ol>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's a few styles of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment roll-in">roll-in</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-green">highlight-green</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Spectacular image!</h2>
+					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
+						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
+					</a>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
+					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
+					<script>
+						document.getElementById('slideshare').attributeName = 'allowfullscreen';
+					</script>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
+						during a presentation.
+					</p>
+				</section>
+
+				<section>
+					<h2>Stellar Links</h2>
+					<ul>
+						<li><a href="http://slid.es">Try the online editor</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
+						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Hakim El Hattab / hakim.se</h3>
+				</section>
+				-->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: 'solarized', // available themes are in /css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
