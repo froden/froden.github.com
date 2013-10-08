@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" name="Default" comment="" />
     <ignored path="slides.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381124585110" ignored="false" />
-    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381125817399" ignored="false" />
+    <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381209385135" ignored="false" />
+    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381207276746" ignored="false" />
     <file path="/notater" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380616525785" ignored="false" />
     <file path="$USER_HOME$/Dropbox/jobb/scala og jvm/scala-foredrag chalmers/reveal.js/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380113145640" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/pom.xml" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380183318777" ignored="false" />
@@ -55,7 +53,7 @@
     <file path="$USER_HOME$/digipost/digipost/dpost-ytelsestest/src/main/scala/no/posten/dpost/ytelsestest/RestApiSendFnr.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380194010554" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-ytelsestest/pom.xml" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380194010555" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-ytelsestest/src/main/scala/no/posten/dpost/ytelsestest/GrinderTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380194010555" ignored="false" />
-    <file path="/fragment.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380875939879" ignored="false" />
+    <file path="/fragment.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381139224396" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/src/main/java/no/posten/dpost/web/api/services/bank/EvryBankWsTemplateProvider.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380620261841" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/logs/dpost-web-csp.2013-09-26.0.log" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380255230697" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/logs/dpost-web.2013-09-26.0.log" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380203654165" ignored="false" />
@@ -124,7 +122,7 @@
     <file path="/a.dummy" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380540852332" ignored="false" />
     <file path="/ObjectOrientedOppg.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380616308505" ignored="false" />
     <file path="/RationalTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380870635913" ignored="false" />
-    <file path="/Rational.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380782061551" ignored="false" />
+    <file path="/Rational.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381209307329" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-common-hazelcast/src/main/java/no/posten/dpost/monitoring/ServerMonitorOppgaveImpl.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380626343016" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-common-hazelcast/src/main/java/no/posten/dpost/monitoring/collectors/HazelcastCollector.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380626343016" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/src/main/java/no/posten/dpost/web/DpostWebFeilKode.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380626343016" ignored="false" />
@@ -137,7 +135,7 @@
     <file path="/Support.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381122344938" ignored="false" />
     <file path="/Car.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380702970805" ignored="false" />
     <file path="/HttpClientTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380720240259" ignored="false" />
-    <file path="/HttpClient.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380861840849" ignored="false" />
+    <file path="/HttpClient.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381208881781" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-mottakerregister/src/main/java/no/posten/dpost/mottakerregister/MottakerregisterMain.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380785305110" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/src/main/java/no/posten/dpost/web/api/activities/stats/GetMonitoringActivity.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380878101713" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-core/src/main/java/no/posten/dpost/dao/epostvarsel/EpostVarselDaoImpl.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380878101713" ignored="false" />
@@ -190,9 +188,6 @@
     <file path="$USER_HOME$/digipost/digipost-webapp/spec/app/views.spec.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380797582457" ignored="false" />
     <file path="/features.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380800094658" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-webapp/content/assets/js/common/app/features.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380800094658" ignored="false" />
-    <file path="$PROJECT_DIR$/../oppgaver/del-1/src/main/scala/oppg1_intro/SyntaxIntro.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380862247794" ignored="false" />
-    <file path="$PROJECT_DIR$/../oppgaver/del-1/src/main/scala/oppg2_oo/HttpClient.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380862247794" ignored="false" />
-    <file path="$PROJECT_DIR$/../oppgaver/del-1/src/main/scala/oppg2_oo/Rational.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380862247794" ignored="false" />
     <file path="$PROJECT_DIR$/../oppgaver/del-1/src/main/scala/lister_intro/Lister.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380862247794" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/project/build.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380866719152" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/src/main/scala/labs/DigipostLabsStack.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380867521273" ignored="false" />
@@ -201,30 +196,47 @@
     <file path="$USER_HOME$/digipost/digipost-labs/project/plugins.sbt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380866245830" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/src/test/scala/labs/RootServletSpec.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380866799919" ignored="false" />
     <file path="/RootServletSpec.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380866422328" ignored="false" />
-    <file path="/build.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380881913306" ignored="false" />
+    <file path="/build.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381135688371" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/src/main/scala/labs/RootResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380867462201" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/src/main/scala/ScalatraBootstrap.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380866799919" ignored="false" />
     <file path="/RootResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380876314071" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/src/test/scala/labs/RootResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380867538184" ignored="false" />
     <file path="/RootResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380875889140" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/project/build.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380881913301" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/project/build.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381146074248" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/JettyMain.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380874326938" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/LabsMain.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380877024487" ignored="false" />
     <file path="/LabsMain.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380874334790" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/DigipostLabsStack.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380881405189" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/labs/RootResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380874503412" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/ScalatraBootstrap.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380876022682" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/ScalatraBootstrap.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142139729" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/RootResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380876016139" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/RootResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380875888544" ignored="false" />
-    <file path="/ScalatraBootstrap.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380875969961" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/ItemResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381123996359" ignored="false" />
-    <file path="/ItemResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381123985239" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/ItemResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381124267627" ignored="false" />
+    <file path="/ScalatraBootstrap.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381141930820" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/ItemResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142016100" ignored="false" />
+    <file path="/ItemResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142504490" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/ItemResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142131341" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/src/main/java/no/posten/dpost/web/filter/AppSensorFilter.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380878101713" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/frontend/content/assets/js/app/api.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380880656297" ignored="false" />
     <file path="/api.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380880624871" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/frontend/content/assets/js/main.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380880818167" ignored="false" />
     <file path="/main.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380880811852" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/TestdataLoader.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381139160594" ignored="false" />
+    <file path="/TestdataLoader.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381139119144" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/test/TestdataLoader.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381139213226" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/test/TestdataLoader.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381139240145" ignored="false" />
+    <file path="/ItemResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142130787" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/ItemsRepo.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142493428" ignored="false" />
+    <file path="/ItemsRepo.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142493428" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/ItemsResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142139729" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/ItemsResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142504964" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/SessionsResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381153639851" ignored="false" />
+    <file path="/SessionsResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381153639851" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/OAuth.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381153931348" ignored="false" />
+    <file path="/OAuth.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381153931348" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/Settings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381152379042" ignored="false" />
+    <file path="/Settings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381152378373" ignored="false" />
+    <file path="/SyntaxTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381171334402" ignored="false" />
+    <file path="/ListerTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381172571581" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,11 +300,11 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="625" column="3" selection-start="24591" selection-end="24591" vertical-scroll-proportion="0.624553">
+            <state line="455" column="45" selection-start="18784" selection-end="18784" vertical-scroll-proportion="3.717521">
               <folding>
                 <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#section#16;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#section#19;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -702,7 +714,11 @@
       <created>1381124591639</created>
       <updated>1381124591640</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tweaks på slides">
+      <created>1381170926968</created>
+      <updated>1381170926968</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -775,7 +791,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Indentering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweaks på slides" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -793,6 +809,7 @@
     <MESSAGE value="La til notater til slides" />
     <MESSAGE value="Fjernet en slide" />
     <MESSAGE value="Indentering" />
+    <MESSAGE value="Tweaks på slides" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -816,7 +833,7 @@
           <folding>
             <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#section#16;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#section#19;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,11 +914,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="625" column="3" selection-start="24591" selection-end="24591" vertical-scroll-proportion="0.624553">
+        <state line="455" column="45" selection-start="18784" selection-end="18784" vertical-scroll-proportion="3.717521">
           <folding>
             <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#section#16;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#section#19;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
