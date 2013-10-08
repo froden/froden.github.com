@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" name="Default" comment="" />
+    <list default="true" id="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <ignored path="slides.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381234626500" ignored="false" />
-    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381207276746" ignored="false" />
+    <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381236520957" ignored="false" />
+    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381241663296" ignored="false" />
     <file path="/notater" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380616525785" ignored="false" />
     <file path="$USER_HOME$/Dropbox/jobb/scala og jvm/scala-foredrag chalmers/reveal.js/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380113145640" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/pom.xml" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380183318777" ignored="false" />
@@ -323,7 +325,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="460" column="45" selection-start="19512" selection-end="19512" vertical-scroll-proportion="3.717521">
+            <state line="258" column="20" selection-start="11852" selection-end="11852" vertical-scroll-proportion="0.4636472">
               <folding>
                 <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -937,7 +939,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="460" column="45" selection-start="19512" selection-end="19512" vertical-scroll-proportion="3.717521">
+        <state line="258" column="20" selection-start="11852" selection-end="11852" vertical-scroll-proportion="0.4636472">
           <folding>
             <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
