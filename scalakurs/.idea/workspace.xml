@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" name="Default" comment="" />
+    <list default="true" id="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" name="Default" comment="Fikset litt syntax-highligh på slides" />
     <ignored path="slides.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381242884971" ignored="false" />
-    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381241663296" ignored="false" />
+    <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381297057993" ignored="false" />
+    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381294383600" ignored="false" />
     <file path="/notater" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380616525785" ignored="false" />
     <file path="$USER_HOME$/Dropbox/jobb/scala og jvm/scala-foredrag chalmers/reveal.js/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380113145640" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/pom.xml" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380183318777" ignored="false" />
@@ -236,7 +236,7 @@
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/Settings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381233054532" ignored="false" />
     <file path="/Settings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381233054532" ignored="false" />
     <file path="/SyntaxTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381171334402" ignored="false" />
-    <file path="/ListerTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381172571581" ignored="false" />
+    <file path="/ListerTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381295684360" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/HttpClient.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381211261387" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/OAuthSettings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230092811" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/OAuth.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230092811" ignored="false" />
@@ -260,6 +260,9 @@
     <file path="/session.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381234592230" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/frontend/content/assets/templates/menu.tmpl" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381234360046" ignored="false" />
     <file path="/menu.tmpl" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381234360046" ignored="false" />
+    <file path="/PatternMatc.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381294745939" ignored="false" />
+    <file path="/PatternMatch.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381293865871" ignored="false" />
+    <file path="/Lister.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381296815098" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +326,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="525" column="70" selection-start="21818" selection-end="21818" vertical-scroll-proportion="-0.51966625">
+            <state line="695" column="1" selection-start="27599" selection-end="27599" vertical-scroll-proportion="6.822551">
               <folding>
                 <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -381,6 +384,9 @@
         <option value="$PROJECT_DIR$/examples/ObjectOriented.scala" />
         <option value="$PROJECT_DIR$/examples/ObjectOrientedOppg.scala" />
         <option value="$PROJECT_DIR$/notater" />
+        <option value="$PROJECT_DIR$/examples/PAtternMAtch.scala" />
+        <option value="$PROJECT_DIR$/examples/PatternMatc.scala" />
+        <option value="$PROJECT_DIR$/examples/PatternMatch.scala" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -467,20 +473,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -517,24 +509,7 @@
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ObjectOrientedOppg1">
-    <configuration default="false" name="Ex3" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Ex3" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="examples" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.PatternMatch">
     <configuration default="false" name="Ex4" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Ex4" />
@@ -589,6 +564,23 @@
     <configuration default="false" name="ObjectOrientedOppg1" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ObjectOrientedOppg1" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="examples" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PatternMatch" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="PatternMatch" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -668,19 +660,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Ex3" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Ex4" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg2" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg1" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Ex4" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg1" />
+      <item index="4" class="java.lang.String" itemvalue="Application.PatternMatch" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg1" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Ex4" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Ex3" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PatternMatch" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg1" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Ex4" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -766,7 +758,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.670354" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -843,11 +835,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="792" column="55" selection-start="31636" selection-end="31636" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -942,7 +929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="525" column="70" selection-start="21818" selection-end="21818" vertical-scroll-proportion="-0.51966625">
+        <state line="695" column="1" selection-start="27599" selection-end="27599" vertical-scroll-proportion="6.822551">
           <folding>
             <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
