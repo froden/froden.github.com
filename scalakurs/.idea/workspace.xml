@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" name="Default" comment="Fikset litt syntax-highligh på slides" />
+    <list default="true" id="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" name="Default" comment="" />
     <ignored path="slides.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381297057993" ignored="false" />
-    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381294383600" ignored="false" />
+    <file path="/Dummy.txt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383036091710" ignored="false" />
+    <file path="/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382817298771" ignored="false" />
     <file path="/notater" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380616525785" ignored="false" />
     <file path="$USER_HOME$/Dropbox/jobb/scala og jvm/scala-foredrag chalmers/reveal.js/index.html" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380113145640" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/pom.xml" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380183318777" ignored="false" />
@@ -53,7 +53,7 @@
     <file path="$USER_HOME$/digipost/digipost/dpost-ytelsestest/src/main/scala/no/posten/dpost/ytelsestest/RestApiSendFnr.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380194010554" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-ytelsestest/pom.xml" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380194010555" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-ytelsestest/src/main/scala/no/posten/dpost/ytelsestest/GrinderTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380194010555" ignored="false" />
-    <file path="/fragment.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381139224396" ignored="false" />
+    <file path="/fragment.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382683254550" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/src/main/java/no/posten/dpost/web/api/services/bank/EvryBankWsTemplateProvider.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380620261841" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/logs/dpost-web-csp.2013-09-26.0.log" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380255230697" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/logs/dpost-web.2013-09-26.0.log" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380203654165" ignored="false" />
@@ -143,7 +143,7 @@
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/src/main/java/no/posten/dpost/jetty/DpostWebServerConfiguration.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380878101713" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-web-server/src/main/java/no/posten/dpost/web/api/resources/stats/StatisticsResource.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380878101713" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost/dpost-common-hazelcast/src/main/java/no/posten/dpost/monitoring/StatsLogger.java" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380878101713" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-webapp/content/assets/js/post/api/api.bank.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380800061749" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-webapp/content/assets/js/post/api/api.bank.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381305229713" ignored="false" />
     <file path="/api.bank.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380797172373" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-webapp/spec/app/track.spec.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380797582455" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-webapp/spec/app/ids.spec.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380797582455" ignored="false" />
@@ -187,7 +187,7 @@
     <file path="$USER_HOME$/digipost/digipost-webapp/spec/app/file.spec.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380797582457" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-webapp/spec/app/views.spec.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380797582457" ignored="false" />
     <file path="/features.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380800094658" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-webapp/content/assets/js/common/app/features.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380800094658" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-webapp/content/assets/js/common/app/features.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381305229713" ignored="false" />
     <file path="$PROJECT_DIR$/../oppgaver/del-1/src/main/scala/lister_intro/Lister.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380862247794" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/project/build.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380866719152" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/src/main/scala/labs/DigipostLabsStack.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1380867521273" ignored="false" />
@@ -229,32 +229,32 @@
     <file path="/ItemsRepo.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142493428" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/ItemsResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381142139729" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/ItemsResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381231640562" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/SessionsResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381234254150" ignored="false" />
-    <file path="/SessionsResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381234241147" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/SessionsResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381315105853" ignored="false" />
+    <file path="/SessionsResource.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381315105293" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/OAuth.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381217131102" ignored="false" />
-    <file path="/OAuth.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381226667512" ignored="false" />
+    <file path="/OAuth.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381315131125" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/Settings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381233054532" ignored="false" />
     <file path="/Settings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381233054532" ignored="false" />
     <file path="/SyntaxTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381171334402" ignored="false" />
     <file path="/ListerTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381295684360" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/HttpClient.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381211261387" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/OAuthSettings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230092811" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/OAuth.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230092811" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/OAuthService.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230092811" ignored="false" />
-    <file path="/OAuthService.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381219377246" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/OAuth.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381315131125" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/OAuthService.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381314929064" ignored="false" />
+    <file path="/OAuthService.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381314901931" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/HttpOauthService.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381217312122" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/CryptoUtil.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381217490209" ignored="false" />
     <file path="/CryptoUtil.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381217483172" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/SessionsResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381231947819" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/test/scala/no/digipost/labs/SessionsResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381315154565" ignored="false" />
     <file path="/SessionsResourceTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381231852131" ignored="false" />
     <file path="/OAuthSettings.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381219067024" ignored="false" />
     <file path="/Dummy.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381222476163" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/oauth/CryptoService.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230092811" ignored="false" />
     <file path="/CryptoService.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381225426747" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/User.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230092810" ignored="false" />
-    <file path="/User.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381229128449" ignored="false" />
-    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/Error.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230092810" ignored="false" />
-    <file path="/Error.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381228721294" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/User.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381313431588" ignored="false" />
+    <file path="/User.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381313416132" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-labs/backend/src/main/scala/no/digipost/labs/Error.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381311396388" ignored="false" />
+    <file path="/Error.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381311396388" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/frontend/content/assets/js/app/mocks.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381230596904" ignored="false" />
     <file path="$USER_HOME$/digipost/digipost-labs/frontend/content/assets/js/app/session.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381234596309" ignored="false" />
     <file path="/session.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381234592230" ignored="false" />
@@ -263,6 +263,27 @@
     <file path="/PatternMatc.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381294745939" ignored="false" />
     <file path="/PatternMatch.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381293865871" ignored="false" />
     <file path="/Lister.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381296815098" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-webapp/content/assets/js/common/strings/strings.nb.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381305229713" ignored="false" />
+    <file path="$USER_HOME$/digipost/digipost-webapp/content/assets/js/post/models/model.invoice.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381305294187" ignored="false" />
+    <file path="/model.invoice.js" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1381305291902" ignored="false" />
+    <file path="/MyFutures.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382733817344" ignored="false" />
+    <file path="/README.md" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383027197328" ignored="false" />
+    <file path="/Repetisjon.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382651321799" ignored="false" />
+    <file path="/Scala Console" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382817913935" ignored="false" />
+    <file path="/options.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382683523731" ignored="false" />
+    <file path="/Options.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383036067482" ignored="false" />
+    <file path="$PROJECT_DIR$/../oppgaver/del-2/src/test/scala/oppg1_intro.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382682579396" ignored="false" />
+    <file path="/OptionsTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383035170641" ignored="false" />
+    <file path="/ScalakursSupport.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383026176356" ignored="false" />
+    <file path="/IntroTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383035063745" ignored="false" />
+    <file path="/Option.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382817883816" ignored="false" />
+    <file path="/Intro.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382991466571" ignored="false" />
+    <file path="/build.sbt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382942094364" ignored="false" />
+    <file path="$PROJECT_DIR$/../oppgaver/del-2/build.sbt" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1382942106068" ignored="false" />
+    <file path="/MyFuturesTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383026041327" ignored="false" />
+    <file path="/TryTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383034421319" ignored="false" />
+    <file path="$PROJECT_DIR$/../oppgaver/del-2/src/test/scala/oppg3_option/OptionsTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383035805097" ignored="false" />
+    <file path="/ForComprehensionsTest.scala" changelist="86bf6cd3-3ed4-47c9-8e21-3762c09f5ca6" time="1383035873829" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,48 +343,7 @@
     <favorites_list name="slides" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="695" column="1" selection-start="27599" selection-end="27599" vertical-scroll-proportion="6.822551">
-              <folding>
-                <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#section#22;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectOrientedOppg.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/ObjectOrientedOppg.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="11" selection-start="1398" selection-end="1398" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectOriented.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/ObjectOriented.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="20" selection-start="2096" selection-end="2096" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -387,6 +367,8 @@
         <option value="$PROJECT_DIR$/examples/PAtternMAtch.scala" />
         <option value="$PROJECT_DIR$/examples/PatternMatc.scala" />
         <option value="$PROJECT_DIR$/examples/PatternMatch.scala" />
+        <option value="$PROJECT_DIR$/examples/Repetisjon.scala" />
+        <option value="$PROJECT_DIR$/examples/Option.scala" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -397,7 +379,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1680" />
-    <option name="height" value="1024" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -445,6 +427,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -477,9 +460,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -491,42 +487,25 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
-    <property name="last_opened_file_path" value="$USER_HOME$/digipost/digipost-labs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oppgaver/del-2" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/examples/lib" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PatternMatch">
-    <configuration default="false" name="Ex4" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Ex4" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="examples" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Scala Console.Scala Console">
     <configuration default="false" name="ObjectOrientedOppg" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ObjectOrientedOppg" />
@@ -595,6 +574,22 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
+      <module name="examples" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="consoleArgs" value="-usejavacp" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
+      <module name="" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="consoleArgs" value="-usejavacp" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -631,6 +626,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -652,27 +654,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Ex4" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg2" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg1" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PatternMatch" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg2" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg1" />
+      <item index="3" class="java.lang.String" itemvalue="Application.PatternMatch" />
+      <item index="4" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PatternMatch" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg1" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg2" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Ex4" />
+        <item index="0" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PatternMatch" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg1" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg2" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ObjectOrientedOppg" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -737,11 +732,23 @@
       <created>1381242889957</created>
       <updated>1381242889957</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lagt til slides om SBT">
+      <created>1382561761943</created>
+      <updated>1382561761943</updated>
+    </task>
+    <task id="LOCAL-00008" summary="La til repetisjonsslides og litt nytt">
+      <created>1382651528439</created>
+      <updated>1382651528439</updated>
+    </task>
+    <task id="LOCAL-00009" summary="La til slides til Option">
+      <created>1382818027334</created>
+      <updated>1382818027334</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="998" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -752,17 +759,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853982" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.670354" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.75170845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24829157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801822" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -810,7 +817,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fikset litt syntax-highligh på slides" />
+    <option name="LAST_COMMIT_MESSAGE" value="La til slides til Option" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -830,67 +837,14 @@
     <MESSAGE value="Indentering" />
     <MESSAGE value="Tweaks på slides" />
     <MESSAGE value="Fikset litt syntax-highligh på slides" />
+    <MESSAGE value="Lagt til slides om SBT" />
+    <MESSAGE value="La til repetisjonsslides og litt nytt" />
+    <MESSAGE value="La til slides til Option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="12" selection-start="10130" selection-end="10130" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#section#22;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/ObjectOriented.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="12" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notater">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="103" selection-start="376" selection-end="477" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="792" column="55" selection-start="31636" selection-end="31636" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/martind-odersky.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.jar!/scala/util/Random.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="6" selection-start="624" selection-end="624" vertical-scroll-proportion="0.30555555" />
@@ -901,9 +855,16 @@
         <state line="59" column="7" selection-start="3672" selection-end="3672" vertical-scroll-proportion="0.52983725" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notater">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="29" selection-start="840" selection-end="840" vertical-scroll-proportion="0.42710707" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="792" column="55" selection-start="31636" selection-end="31636" vertical-scroll-proportion="0.28318584" />
+        <state line="38" column="33" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.6810036">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/ObjectOrientedOppg.scala">
@@ -913,9 +874,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notater">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="840" selection-end="840" vertical-scroll-proportion="0.42710707">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -927,13 +888,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.jar!/scala/collection/immutable/List.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="16" selection-start="3592" selection-end="3592" vertical-scroll-proportion="0.34584013" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="633" column="19" selection-start="23131" selection-end="23131" vertical-scroll-proportion="0.33282906" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/applications.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="746" selection-end="746" vertical-scroll-proportion="0.33282906">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reveal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="18" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.7322835" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.jar!/scala/collection/IterableLike.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="15" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.3611557" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="695" column="1" selection-start="27599" selection-end="27599" vertical-scroll-proportion="6.822551">
+        <state line="675" column="0" selection-start="25944" selection-end="25944" vertical-scroll-proportion="-0.033210333">
           <folding>
-            <element signature="n#style#0;n#img#1;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#section#22;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h4#0;n#section#23;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
