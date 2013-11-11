@@ -711,20 +711,13 @@ res0: Boolean = true
                     </a>
                     <aside class="notes">
                         <ul>
-                            <li>Velkommen til del 2 av Scalakurset</li>
-                            <li>Fokusere på verktøy som er nyttige ifm funksjonell programmering</li>
-                        </ul>
-                    </aside>
-                </section>
-
-                <section>
-                    <h3>9. okt: Grunnleggende Scala</h3>
-                    <h3><strong>30. okt: Funksjonell programmering</strong></h3>
-                    <h3>11. nov: Webapp med Scala</h3>
-                    <aside class="notes">
-                        <ul>
-                            <li>Scalas standarbibliotek inneholder en rekke avanserte verktøy som gjør at man kan løse vanlig problemer på en mer funksjonell måte.</li>
-                            <li>Vi ser på hvordan disse kan hjelpe oss til å unngå nullverdier, håndtere exceptions og håndtere paralellitet.</li>
+                            <li>Velkommen til workshop i Scala</li>
+                            <li>Jobbe med og lære oss kraftige verktøy i Scala som er nyttige ifm. funksjonell prog</li>
+                            <li>Dette er ikke et kurs i funksjonell programmering generelt</li>
+                            <li>Da ville første slide handlet om referential transparency</li>
+                            <li>Planen er at vi vekselvis presenterer et emne med noen slides og så gjør vi oppgaver til dette emnet før neste</li>
+                            <li>Håper alle har fått satt opp en editor/ide de kan bruke til å løse oppgaver i etterpå</li>
+                            <li>Det er selvsagt lov å parpgrogrammere</li>
                         </ul>
                     </aside>
                 </section>
@@ -734,7 +727,9 @@ res0: Boolean = true
                     <h3>(og litt nytt)</h3>
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                            <li>Først litt repetisjon av grunnleggende Scala (selv om dere ikke trenger det)</li>
+                            <li>Går litt fort gjennom det, men si fra hvis vi skal bruke lenger tid</li>
+                            <li>Det blir noen oppgaver om dette også</li>
                         </ul>
                     </aside>
                 </section>
@@ -756,7 +751,8 @@ def add(a: Int, b:Int): Int = a + b
 					</code></pre>
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                            <li>Eneste måten å definere en variabel som vi er interessert i :)</li>
+                            <li>Body til en metode kan gå over flere linjer med {}</li>
                         </ul>
                     </aside>
                 </section>
@@ -782,7 +778,8 @@ val head = try {
 					</code></pre>
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                            <li>Alt er expressions</li>
+                            <li>Alt har returverdi</li>
                         </ul>
                     </aside>
                 </section>
@@ -801,12 +798,13 @@ replaceAll("e", "3")
 //functions as arguments
 def combine(a: Int, b: Int, func: (Int, Int) => Int) = func(a, b)
 
-combine(2, 3, (x, y) => x * y))
+combine(2, 3, _ * _)
 //res1: Int = 6
 					</code></pre>
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                            <li>Verdi som er en funksjon som tar to ints og returnerer int</li>
+                            <li>Parameterlisten til venstre for pilen og body til høyre</li>
                         </ul>
                     </aside>
                 </section>
@@ -849,7 +847,8 @@ Node(Leaf("left"), Leaf("right")) match {
 					</code></pre>
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                            <li>case classes er spesielle value-klasser som egner seg godt til pattern matching</li>
+                            <li>De får automatisk equals, hashcode, tosting og metoder for konstruere og dekonstruer</li>
                         </ul>
                     </aside>
                 </section>
@@ -870,6 +869,7 @@ def map[A, B](value: A)(func: A => B): B = func(value)
 map("Frode".toList)(lastElement)
 //res4: Char = e
 					</code></pre>
+                    <p class="fragment">... men mye mer avansert!</p>
                     <aside class="notes">
                         <ul>
                             <li></li>
@@ -888,7 +888,7 @@ map("Frode".toList)(lastElement)
                     <ul>
                         <li>Enkel konfig for enkle prosjekter</li>
                         <li>Fleksibel konfig i Scalakode for avanserte prosjekter</li>
-                        <li>Dependency-management ala Maven</li>
+                        <li>Dependency-management ala Maven (Apache Ivy)</li>
                         <li>Kontinuerlig kompilering/testing/app-restart ved kodeendringer</li>
                         <li>... og mye mer</li>
                     </ul>
@@ -964,12 +964,12 @@ $ ./sbt
                 <section>
                     <h2>For comprehensions</h2>
                     <pre><code class="scala" data-trim contenteditable>
-def even(from: Int, to: Int): List[Int] =
-  for (i <- List.range(from, to) if i % 2 == 0) yield i
+def even(start: Int, end: Int) =
+    for (i <- start until end if i % 2 == 0) yield i
                     </code></pre>
                     <pre><code class="scala" data-trim contenteditable>
 scala> even(0, 20)
-res0: List[Int] = List(0, 2, 4, 6, 8, 10, 12, 14, 16, 18)
+res0: Vector[Int] = Vector(0, 2, 4, 6, 8, 10, 12, 14, 16, 18)
                     </code></pre>
                 </section>
 
@@ -978,8 +978,7 @@ res0: List[Int] = List(0, 2, 4, 6, 8, 10, 12, 14, 16, 18)
                                         <pre><code class="scala" data-trim contenteditable>
 scala> for(  x <- (1 to 2 );  y <- (1 to 3)  ) yield (x,y)
 
-res0: scala.collection.immutable.IndexedSeq[(Int, Int)] = \
-  Vector((1,1), (1,2), (1,3), (2,1), (2,2), (2,3))
+res0: Vector[(Int, Int)] = Vector((1,1), (1,2), (1,3), (2,1), (2,2), (2,3))
                                         </code></pre>
 
                 </section>
@@ -992,8 +991,7 @@ def getFactors(n: Long) =
                     </code></pre>
                     <pre><code class="scala" data-trim contenteditable>
 scala> getFactors(20)
-res0: scala.collection.immutable.IndexedSeq[Int] = \
-  Vector(1, 2, 4, 5, 10, 20)
+res0: Vector[Int] = Vector(1, 2, 4, 5, 10, 20)
                     </code></pre>
                 </section>
 
@@ -1042,7 +1040,7 @@ c.withFilter(x => cond).map(x => {...})
                 </section>
 
                 <section>
-                    <h3>Eksempel</h3>
+                    <h2>Eksempel</h2>
                     <pre><code class="scala" data-trim contenteditable>
 val something: Option[String] = Some("A string")
 val nothing: Option[String] = None
@@ -1070,7 +1068,7 @@ nothing.getOrElse("")
                 </section>
 
                 <section>
-                    <h3>Problemet med null</h3>
+                    <h2>Problemet med null</h2>
                     <pre><code class="scala" data-trim contenteditable>
 val name: String = request.getParameter("name")
 
@@ -1096,7 +1094,7 @@ val upperCaseName = if (name != null) {
                 </section>
 
                 <section>
-                    <h3>Option løser problemet</h3>
+                    <h2>Option løser problemet</h2>
                     <pre><code class="scala" data-trim contenteditable>
 val name: Option[String] = request.getParameter("name")
 
@@ -1138,7 +1136,7 @@ myOptional.getOrElse("!!")
       
 
                 <section>
-                    <h3>Kan pattern matches</h3>
+                    <h2>Kan pattern matches</h2>
                     <pre><code class="scala" data-trim contenteditable>
 val optionalPerson: Option[Person] = Some(Person("Frode"))
 
@@ -1156,7 +1154,7 @@ optionalPerson match {
                 </section>
 
                 <section>
-                    <h3>Kan brukes i for-comprehensions</h3>
+                    <h2>Kan brukes i for-comprehensions</h2>
                     <pre><code class="scala" data-trim contenteditable>
 val firstName: Option[String] = Some("Arild")
 val lastName: Option[String] = Some("Nilsen")
@@ -1185,20 +1183,18 @@ val fullName = for {
                         <ul>
                             <li>Try er en abstrakt type med 2 subtyper:</li>
                             <li>Success - en Try som inneholder det du er på jakt etter </li>
-                            <li>Failure - en Try som inneholder en evt. Throwable</li>
+                            <li>Failure - en Try som inneholder en Throwable</li>
+                            <li>Ligner på Option</li>
+                            <li>Brukes når du også vil si hvorfor noe feilet</li>
+                            <li>Samme som en right biased Either der left er satt til Throwable</li>
+                            <li>Option er en monad dvs vi kan mappe og flatmappe over den</li>
+                            <li>Og den er exception safe. Ingen operasjoner på en try vil resultere i at en exception lekker ut - Failure</li>
                         </ul>
                     </aside>
                 </section>
 
                 <section>
-                  <h2>Minner mye om Option</h2>
-                  Representerer enn kalkulering med resultat av type A
-                  <ul><li>Kan resultere i en Success[A] hvis det går bra</li>
-                      <li>eller en Failure[A] som wrapper en Throwable</li></ul>
-                </section>
-
-                <section>
-                  <h3>Kaste og fange exceptions</h3>
+                  <h2>Kaste og fange exceptions</h2>
                   <pre><code class="scala" data-trim contenteditable>
 case class Kunde(alder: Int)
 class Sigaretter
@@ -1217,30 +1213,30 @@ val melding = try {
 } catch { 
   case ForUngException(mld) => mld
 }
-println(s"ERRR: $melding")
+println(melding)
                     </code></pre>
                   </div>
                 </section>
 
                 <section>
-                  <h3>Prøve og feile</h3>
+                  <h2>Prøve og feile</h2>
                   <pre><code class="scala" data-trim contenteditable>
 case class Kunde(alder: Int)
 class Sigaretter
 case class ForUngException(melding: String) extends Exception(melding)
 
-def kjøpSigg(kunde: Kunde): Try[Sigaretter] =
-  Try(if (kunde.alder < 18)
+def kjøpSigg(kunde: Kunde): Sigaretter =
+  if (kunde.alder < 18)
     throw ForUngException(s"Kunden må være over 18, men er ${kunde.alder}")
-  else new Sigaretter)
+  else new Sigaretter
                   </code></pre>
                   <div class="fragment"><pre><code class="scala" data-trim contenteditable>
 val ungKunde = Kunde(15)
-val melding = kjøpSigg(ungKunde) match {
+val melding = Try(kjøpSigg(ungKunde)) match {
   case Success(røyken) => s"Her har du $røyken din!"
   case Failure(e) => e.getMessage
 }
-println(s"ERRR: $melding")
+println(melding)
                     </code></pre>
                   </div>
                 </section>
@@ -1254,18 +1250,38 @@ class Tyggis extends Produkt
 case class ForUngException(melding: String) extends Exception(melding)
 
 def kjøpSigg(kunde: Kunde): Try[Produkt] =
-  Try(if (kunde.alder < 18)
-      throw ForUngException(s"Kunden må være over 18, men er ${kunde.alder}")
-        else new Sigaretter)
+  if (kunde.alder < 18)
+    Failure(ForUngException(s"Kunden må være over 18, men er ${kunde.alder}"))
+  else
+    Success(new Sigaretter)
                   </code></pre>
                   <div class="fragment"><pre><code class="scala" data-trim contenteditable>
 val ungKunde = Kunde(15)
 val produkt = kjøpSigg(ungKunde) recover {
-  case fue: ForUngException => new Tyggis  
+  case fue: ForUngException => new Tyggis
 }
 println(s"Hurra jeg fikk kjøpt ${produkt.get}")
                   </code></pre></div>
                   </section>
+
+                <section>
+                  <h2>Success biased</h2>
+                  <pre><code class="scala" data-trim contenteditable>
+val keyValues = for {
+  keys <- Try(Source.fromFile("keys.txt").getLines())
+  values <- Try(Source.fromFile("values.txt").getLines())
+} yield keys zip values toMap
+
+val result: Map[String, String] = keyValues.getOrElse(Map())
+                  </code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>map, flatmap jobber med sucess-delen</li>
+                            <li>Feilures propageres automatisk</li>
+                            <li>Fail-fast</li>
+                        </ul>
+                    </aside>
+                </section>
 
                 <section>
                   <h2>Jobbe med Try</h2>
@@ -1279,16 +1295,16 @@ println(s"Hurra jeg fikk kjøpt ${produkt.get}")
                 </section>
 
                 <section>
-                    <h1>Futures and Promises</h1>
+                    <h1>Futures og Promises</h1>
                     <ul>
-                        <li class="fragment">SIP-14 - redesign of scala.concurrent</li>
-                        <li class="fragment">Introduced in Scala 2.10</li>
-                        <li class="fragment">Placeholder object for a result that does not yet exist</li>
+                        <li class="fragment">SIP-14 - redesign av scala.concurrent</li>
+                        <li class="fragment">Introdusert i Scala 2.10</li>
+                        <li class="fragment">Placeholder objekt for et resultat som ennå ikke eksisterer</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>SIP-14 definition</h2>
+                    <h2>SIP-14 definisjon</h2>
 
                     <div class="fragment">
                         <blockquote width="900" cite="http://skillsmatter.com/podcast/scala/the-future-i-was-promised">A Future
@@ -1330,7 +1346,7 @@ hello future!</code></pre>
                 </section>
 
                 <section>
-                    <h2>Basic Operations on Futures</h2>
+                    <h2>Grunnleggende operasjoner på Futures</h2>
 
                     <div class="fragment">
             <pre><code>//Asynchronously processes the value in
@@ -1353,7 +1369,7 @@ def filter(p: T => Boolean): Future[T]</code></pre>
                 </section>
 
                 <section>
-                    <h2>Error handling</h2>
+                    <h2>Feilhåndtering</h2>
 
                     <div class="fragment">
 <pre><code>val riskyRes = future { riskyWork() }
@@ -1366,7 +1382,7 @@ val finalRes = riskyRes recoverWith {
                 </section>
 
                 <section>
-                    <h2>Futures are composeable</h2>
+                    <h2>Futures er composeable</h2>
                     <div class="fragment">
     <pre><code>val keys = future { readFile("keys.txt") }
 val values = future { readFile("values.txt") }
@@ -1392,16 +1408,24 @@ Await.result(hashMap, Duration.Inf)</code></pre>
                 </section>
 
                 <section>
-                    <h2>"Futures" vs. "Promises"</h2>
+                    <h2>Gjør oppgaver</h2>
                     <ul>
-                        <li class="fragment">"Future", "promise", "delay" and "deferred" used interchangeably</li>
-                        <li class="fragment">Complementary primitives</li>
-                        <li class="fragment">"Promise" exclusively used in the JavaScript world</li>
+                        <li>oppg5_futures (Få testene grønne)</li>
+			<li>Kikk på Work-klassen (og perform() metoden)</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>Producer Consumer Example</h2>
+                    <h2>"Futures" vs. "Promises"</h2>
+                    <ul>
+                        <li class="fragment">"Future", "promise", "delay" og "deferred" brukes om hverandre</li>
+                        <li class="fragment">Komplementære primitiver</li>
+                        <li class="fragment">JavaScript-verden bruker kun "Promise"</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Producer Consumer Eksempel</h2>
 
                     <div class="fragment">
 <pre><code>val p = promise[T]
@@ -1423,13 +1447,17 @@ val consumer = future {
                 </section>
 
                 <section>
-                    <h2>Resources</h2>
+                    <h2>Ressurser</h2>
                     <ul>
                         <li><a href="http://docs.scala-lang.org/overviews/core/futures.html">Scala Documentation - Futures and Promises</a></li>
                         <li><a href="http://skillsmatter.com/podcast/scala/the-future-i-was-promised">Scala Days 2012 - The Future I was Promised</a></li>
                         <li><a href="http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/">You're Missing the Point of Promises</a></li>
                     </ul>
                 </section>
+
+		<section>
+                    <h2>Takk for innsatsen, folkens!</h2>
+               </section>
 
         <section>
             <h3>9. okt: Grunnleggende Scala</h3>
@@ -1520,6 +1548,194 @@ val consumer = future {
 }
         </code></pre>
         </section>
+
+	<section>
+		<h2>MongoDB oppsett</h2>
+		<ul>
+			<li>http://www.mongodb.org/downloads</li>
+			<li><code class="bash">tar zxvf mongodb-linux-x86_64-2.4.8.tgz</code></li>
+			<li><code class="bash">mkdir -p /home/sjur/mongodbdata</code></li>
+			<li><code class="bash">mongodb --dbpath /home/sjur/mongodbdata</code></li>
+			<li>... [initandlisten] waiting for connections on port 27017</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>MongoDB add data</h2>
+		<p><pre><code>mongo
+help
+db.x.insert({_id: 10, type: "misc", item: "card", qty: 15})
+db.x.update({type:"book", item:"journal"},{$set:{qty:9}}, {upsert:true})
+db.x.save({type: "book", item: "notebook", qty: 40})
+</code></pre></p>
+		
+		<aside class="notes">
+		        <ul>
+		            <li>starter query-console</li>
+		            <li>gir hjelp i query-console</li>
+			    <li>insert med provided _id</li>
+			    <li>insert og la mongo autogenerere id (_id) (upsert = update or insert)</li>
+			    <li>insert med save() og la mongo autogenerere id (_id)</li>
+		        </ul>
+		    </aside>
+	</section>
+	<section>
+		<h2>MongoDB query</h2>
+        <p><pre><code>db.inventory.find({})
+db.x.find({type: "snacks"})
+db.x.find({type: {$in: ['food', 'snacks']}})
+db.x.find({type: 'food', price: {$lt: 9.95}})
+db.x.find({$or: [{ qty: {$gt: 100}}, {price: {$lt: 9.95}}]})
+</code></pre></p>        
+		<aside class="notes">
+		        <ul>
+		            <li>tomt kriterie = alle dokumenter find()</li>
+		            <li>equals kriterie</li>
+			    <li>or kriterie på samme felt ('type')</li>
+			    <li>and kriterie</li>
+			    <li>or kriterie</li>
+		        </ul>
+		    </aside>
+	</section>
+
+    <section>
+        <h2 style="text-transform: none">AngularJS</h2>
+        <p><img src="images/angularjs-logo.png" width="30%" alt="angularJS"></p>
+        <p>JavaScript rammeverk for utvikling<br>av single-page applikasjoner</p>
+    </section>
+
+    <section>
+        <h2><em><a href="http://net.tutsplus.com/tutorials/javascript-ajax/5-awesome-angularjs-features/">5 Awesome AngularJS Features</a></em></h2>
+        <ol>
+            <li>Two Way Data-Binding</li>
+            <li>Templates</li>
+            <li>MVC</li>
+            <li>Dependency Injection</li>
+            <li>Directives</li>
+        </ol>
+    </section>
+
+    <section>
+    <h2>Example view</h2>
+    <pre><code class="html" data-trim contenteditable>
+
+<article ng-controller="MainController">
+    <div class="custom-alert" ng-show="showError">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>{{errorMessage}}</strong>
+    </div>
+    <ul>
+        <li ng-repeat="article in articles">
+            <h3 class="title">
+                <a href="#/article/{{article._id}}">{{article.title}}</a>
+            </h3>
+            <div class="meta">
+                <span class="fancy">av</span>
+                <span class="author">{{article.author}}</span>
+            </div>
+        </li>
+    </ul>
+</article>
+    </code></pre>
+    </section>
+
+    <section>
+                    <h2>Example Controller</h2>
+    <pre><code style="font-size: 16px; line-height: 1.3em" class="js" data-trim contenteditable>
+function MainController($scope, dataService) {
+    $scope.showError = false;
+
+    dataService.getAllArticles().then(
+        function(articles) { $scope.articles = articles; },
+        function() { showError('feil ved henting av artikler'); }
+    );
+
+    function showError(message) {
+        $scope.showError = true;
+        $scope.errorMessage = message;
+    }
+
+    $scope.submitArticle = function(article) {
+        dataService.addArticle(article).then(
+            function() { $scope.articles.push(article); },
+            function() { showError('feil ved lagring av artikkel'); }
+        );
+    }
+};
+    </code></pre>
+    </section>
+
+   <section>
+                    <h2>Example Model</h2>
+    <pre><code style="font-size: 16px; line-height: 1." class="js" data-trim contenteditable>
+app.factory('dataService', function($http) {
+    return {
+        getAllArticles: function() {
+            return $http.get('/articles').then(function(resp) {
+                return resp.data;
+            });
+        },
+        addArticle: function(article) {
+            return $http.post('/articles', article).then(function(resp) {
+                return resp.data;
+            });
+        }
+    }
+});
+    </code></pre>
+    </section>
+
+    <section>
+            <h2>Blog API</h2>
+            <pre><code data-trim contenteditable>
+#ArticlesController
+GET    /articles               #get all articles
+POST   /articles               #create new article
+GET    /articles/:id           #get single article
+PUT    /articles/:id           #update existing article
+DELETE /articles/:id           #remoeve article
+POST   /articles/:id/comments  #create new comment on article
+DELETE /articles/:id/comments  #delete all comments from article
+            </code></pre>
+    </section>
+
+    <section>
+            <h2>Blog API</h2>
+            <pre><code data-trim contenteditable>
+#article with comments
+{
+    "_id": "1234zxcvdas",
+    "author": "Frode",
+    "title": "A blogpost",
+    "content": "Loong and informative post"
+    "comments": [
+        {
+            "author": "Sjur",
+            "content": "Nice post!",
+        },
+        {
+            "author": "Arild",
+            "content": "Could be shorter."
+        }
+    ]
+}
+            </code></pre>
+    </section>
+
+        <section>
+            <h2>Nyttige lenker</h2>
+            <ul>
+                <li><a href="http://mongodb.github.io/casbah/tutorial.html">MongoDB Scala tutorial</a></li>
+                <li><a href="https://github.com/json4s/json4s">Json4S</a></li>
+                <li><a href="http://scalatra.org/2.2/guides/http/routes.html">Scalatra routing guide</a></li>
+                <li>Les readme på <a href="https://github.com/froden/scalakurs">https://github.com/froden/scalakurs</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Takk for innsatsen alle sammen!</h2>
+        </section>
+
 
             </div>
 
